@@ -3,13 +3,13 @@ name: Continuos Deployment workflow
 on:
   push:
     branches:
-      - master
+      - main
 
 jobs:
   cd:
     runs-on: ubuntu-latest
     steps:
-   - name: Checkout repository
+      - name: Checkout repository
         uses: actions/checkout@v3
       - name: Install
         run: npm ci
@@ -17,4 +17,3 @@ jobs:
         run: npm run build
       - name: Deploy
         run: npm run deploy
-
