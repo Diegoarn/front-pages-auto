@@ -24,4 +24,4 @@ jobs:
       - name: Build
         run: npm run build
       - name: Deploy
-        run: npm run deploy -- -r git@github.com:diegoarn.github.io/front-pages-auto/.git
+        run: npm run deploy -- -r git@github.com:diegoarn/front-pages-auto/.git
