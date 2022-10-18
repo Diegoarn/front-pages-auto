@@ -20,8 +20,8 @@ jobs:
           git config --global user.email "cd-user@my-app.com"
           git config --global user.name "cd-user"
       - name: Install
-        run: npm i
+        run: npm ci
       - name: Build
         run: npm run build
       - name: Deploy
-        run: npm run deploy -- -r git@github.com:diegoarn/front-pages-auto/.git
+        run: npm run deploy -- -r git@github.com:diegoarn/front-pages-auto.git
